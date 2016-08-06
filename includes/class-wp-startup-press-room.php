@@ -112,6 +112,11 @@ class Wp_Startup_Press_Room {
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wp-startup-press-room-admin.php';
+        
+        /**
+		 * The class responsible for creating and managing the Press Releases Post Type.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wp-startup-press-room-cpt.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing

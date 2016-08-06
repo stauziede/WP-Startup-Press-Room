@@ -30,7 +30,7 @@ class Wp_Startup_Press_Room_Deactivator {
 	 * @since    1.0.0
 	 */
 	public static function deactivate() {
-
+        flush_rewrite_rules();
 	}
 
 }
