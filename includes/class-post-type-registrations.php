@@ -54,7 +54,6 @@ class PR_Post_Type_Registrations {
 			'title',
 			'editor',
 			'thumbnail',
-			'custom-fields',
 			'revisions',
 		);
 		$args = array(
