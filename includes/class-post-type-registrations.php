@@ -1,4 +1,15 @@
 <?php
+/**
+ * Team Post Type
+ *
+ * @package   Team_Post_Type
+ * @license   GPL-2.0+
+ */
+/**
+ * Register post types and taxonomies.
+ *
+ * @package Team_Post_Type
+ */
 
 /**
 * Create the Press Realease custom post type

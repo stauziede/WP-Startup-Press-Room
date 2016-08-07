@@ -113,10 +113,6 @@ class Wp_Startup_Press_Room {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wp-startup-press-room-admin.php';
         
-        /**
-		 * The class responsible for creating and managing the Press Releases Post Type.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wp-startup-press-room-cpt.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
@@ -125,8 +121,25 @@ class Wp_Startup_Press_Room {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wp-startup-press-room-public.php';
 
 		$this->loader = new Wp_Startup_Press_Room_Loader();
+        
+        // Required files for registering the post type and taxonomies.
+require plugin_dir_path( __FILE__ ) . 'includes/class-post-type.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-post-type-registrations.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-post-type-metaboxes.php';
+// Instantiate registration class, so we can add it as a dependency to main plugin class.
+$post_type_registrations = new PR_Post_Type_Registrations;
+// Instantiate main plugin file, so activation callback does not need to be static.
+$post_type = new PR_Post_Type( $post_type_registrations );
+// Register callback that is fired when the plugin is activated.
+register_activation_hook( __FILE__, array( $post_type, 'activate' ) );
+// Initialize registrations for post-activation requests.
+$post_type_registrations->init();
+// Initialize metaboxes
+$post_type_metaboxes = new PR_Post_Type_Metaboxes;
+$post_type_metaboxes->init();
 
 	}
+    
 
 	/**
 	 * Define the locale for this plugin for internationalization.
