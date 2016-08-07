@@ -64,7 +64,7 @@ class PR_Post_Type_Registrations {
 			'capability_type' => 'post',
 			'rewrite'         => array( 'slug' => 'press-release', ), // Permalinks format
 			'menu_position'   => 30,
-			'menu_icon'       => 'dashicons-id',
+			'menu_icon'       => 'dashicons-analytics',
 		);
 		$args = apply_filters( 'pr_post_type_args', $args );
 		register_post_type( $this->post_type, $args );
