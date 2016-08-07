@@ -18,7 +18,7 @@
  *
  * @package    Wp_Startup_Press_Room
  * @subpackage Wp_Startup_Press_Room/admin
- * @author     Stephane <stauziede@gmail.com>
+ * @author     Stephane Tauziede <stauziede@gmail.com>
  */
 class Wp_Startup_Press_Room_Admin {
 
