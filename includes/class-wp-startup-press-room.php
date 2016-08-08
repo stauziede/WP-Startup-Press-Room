@@ -123,17 +123,17 @@ class Wp_Startup_Press_Room {
 		$this->loader = new Wp_Startup_Press_Room_Loader();
         
         // Required files for registering the post type and taxonomies.
-require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-post-type-registrations.php';
-require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-post-type-metaboxes.php';
-// Instantiate registration class, so we can add it as a dependency to main plugin class.
-$post_type_registrations = new PR_Post_Type_Registrations;
-// Register callback that is fired when the plugin is activated.
-register_activation_hook( __FILE__, array( $post_type, 'activate' ) );
-// Initialize registrations for post-activation requests.
-$post_type_registrations->init();
-// Initialize metaboxes
-$post_type_metaboxes = new PR_Post_Type_Metaboxes;
-$post_type_metaboxes->init();
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-post-type-registrations.php';
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-post-type-metaboxes.php';
+        // Instantiate registration class, so we can add it as a dependency to main plugin class.
+        $post_type_registrations = new PR_Post_Type_Registrations;
+        // Register callback that is fired when the plugin is activated.
+        register_activation_hook( __FILE__, array( $post_type, 'activate' ) );
+        // Initialize registrations for post-activation requests.
+        $post_type_registrations->init();
+        // Initialize metaboxes
+        //$post_type_metaboxes = new PR_Meta_Box;
+        //$post_type_metaboxes->init();
 
 	}
     

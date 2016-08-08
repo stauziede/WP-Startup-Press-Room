@@ -54,6 +54,7 @@ class PR_Post_Type_Registrations {
 			'title',
 			'editor',
 			'thumbnail',
+			'custom-fields',
 			'revisions',
 		);
 		$args = array(
@@ -64,6 +65,7 @@ class PR_Post_Type_Registrations {
 			'rewrite'         => array( 'slug' => 'press-release', ), // Permalinks format
 			'menu_position'   => 30,
 			'menu_icon'       => 'dashicons-analytics',
+            
 		);
 		$args = apply_filters( 'pr_post_type_args', $args );
 		register_post_type( $this->post_type, $args );
@@ -106,4 +108,5 @@ class PR_Post_Type_Registrations {
 		$args = apply_filters( 'pr_post_type_category_args', $args );
 		register_taxonomy( $this->taxonomies[0], $this->post_type, $args );
 	}
+     
 }
