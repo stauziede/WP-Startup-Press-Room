@@ -6,15 +6,15 @@ class PR_Meta_Box {
 	private $screens = array(
 		'press-release',
 	);
-	private $fields = array(
+    private $fields = array(
 		array(
 			'id' => 'pr-date',
-			'label' => __('PR Date'),
+            'label' => _e('PR Date', 'wp-startup-press-room'),
 			'type' => 'date',
 		),
 		array(
 			'id' => 'add-image-s-to-press-release',
-			'label' => __('Add Image(s) to Press Release'),
+			'label' => 'Add Image(s) to Press Release',
 			'type' => 'media',
 		),
 		array(
@@ -22,23 +22,23 @@ class PR_Meta_Box {
 			'label' => 'Release Date',
 			'type' => 'select',
 			'options' => array(
-				__('FOR IMMEDIATE RELEASE'),
-				__('EMBARGO UNTIL '),
+				'FOR IMMEDIATE RELEASE' ,
+				'EMBARGO UNTIL ',
 			),
 		),
 		array(
 			'id' => 'if-embargo-until-date',
-			'label' => __('if EMBARGO : until date'),
+			'label' => 'if EMBARGO : until date',
 			'type' => 'datetime-local',
 		),
 		array(
 			'id' => 'location-city-state-and-or-country',
-			'label' => __('Location (City, State and/or Country)'),
+			'label' => 'Location (City, State and/or Country)',
 			'type' => 'text',
 		),
 		array(
 			'id' => 'additional-url',
-			'label' => __('Additional URL'),
+			'label' => 'Additional URL',
 			'type' => 'url',
 		),
 	);
@@ -120,7 +120,7 @@ class PR_Meta_Box {
 	public function generate_fields( $post ) {
 		$output = '';
 		foreach ( $this->fields as $field ) {
-			$label = '<label for="' . $field['id'] . '">' . $field['label'] . '</label>';
+			$label = '<label for="' . $field['id'] . '">'. __( $field['label'] , 'wp-startup-press-room') .'</label>';
 			$db_value = get_post_meta( $post->ID, 'press_release_options_' . $field['id'], true );
 			switch ( $field['type'] ) {
 				case 'media':
