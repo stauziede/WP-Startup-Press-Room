@@ -39,22 +39,21 @@ class PR_Post_Type_Registrations {
 	 */
 	protected function register_post_type() {
 		$labels = array(
-			'name'               => __( 'Press Releases', 'press-release' ),
-			'singular_name'      => __( 'Press Release', 'press-release' ),
-			'add_new'            => __( 'Add new PR', 'press-release' ),
-			'add_new_item'       => __( 'Add new Press Release', 'press-release' ),
-			'edit_item'          => __( 'Edit Press Release', 'press-release' ),
-			'new_item'           => __( 'New Press Release', 'press-release' ),
-			'view_item'          => __( 'View Press Release', 'press-release' ),
-			'search_items'       => __( 'Search Press Release', 'press-release' ),
-			'not_found'          => __( 'No Press Release found', 'press-release' ),
-			'not_found_in_trash' => __( 'No Press Release in the trash', 'press-release' ),
+			'name'               => __( 'Press Releases', 'wp-startup-press-room' ),
+			'singular_name'      => __( 'Press Release', 'wp-startup-press-room' ),
+			'add_new'            => __( 'Add new PR', 'wp-startup-press-room' ),
+			'add_new_item'       => __( 'Add new Press Release', 'wp-startup-press-room' ),
+			'edit_item'          => __( 'Edit Press Release', 'wp-startup-press-room' ),
+			'new_item'           => __( 'New Press Release', 'wp-startup-press-room' ),
+			'view_item'          => __( 'View Press Release', 'wp-startup-press-room' ),
+			'search_items'       => __( 'Search Press Release', 'wp-startup-press-room' ),
+			'not_found'          => __( 'No Press Release found', 'wp-startup-press-room' ),
+			'not_found_in_trash' => __( 'No Press Release in the trash', 'wp-startup-press-room' ),
 		);
 		$supports = array(
 			'title',
 			'editor',
 			'thumbnail',
-			'custom-fields',
 			'revisions',
 		);
 		$args = array(
@@ -77,22 +76,22 @@ class PR_Post_Type_Registrations {
 	 */
 	protected function register_taxonomy_category() {
 		$labels = array(
-			'name'                       => __( 'PR Categories', 'press-release' ),
-			'singular_name'              => __( 'PR Category', 'press-release' ),
-			'menu_name'                  => __( 'PR Categories', 'press-release' ),
-			'edit_item'                  => __( 'Edit PR Category', 'press-release' ),
-			'update_item'                => __( 'Update PR Category', 'press-release' ),
-			'add_new_item'               => __( 'Add New PR Category', 'press-release' ),
-			'new_item_name'              => __( 'New PR Category Name', 'press-release' ),
-			'parent_item'                => __( 'Parent PR Category', 'press-release' ),
-			'parent_item_colon'          => __( 'Parent PR Category:', 'press-release' ),
-			'all_items'                  => __( 'All PR Categories', 'press-release' ),
-			'search_items'               => __( 'Search PR Categories', 'press-release' ),
-			'popular_items'              => __( 'Popular PR Categories', 'press-release' ),
-			'separate_items_with_commas' => __( 'Separate PR categories with commas', 'press-release' ),
-			'add_or_remove_items'        => __( 'Add or remove PR categories', 'press-release' ),
-			'choose_from_most_used'      => __( 'Choose from the most used PR categories', 'press-release' ),
-			'not_found'                  => __( 'No PR categories found.', 'press-release' ),
+			'name'                       => __( 'PR Categories', 'wp-startup-press-room' ),
+			'singular_name'              => __( 'PR Category', 'wp-startup-press-room' ),
+			'menu_name'                  => __( 'PR Categories', 'wp-startup-press-room' ),
+			'edit_item'                  => __( 'Edit PR Category', 'wp-startup-press-room' ),
+			'update_item'                => __( 'Update PR Category', 'wp-startup-press-room' ),
+			'add_new_item'               => __( 'Add New PR Category', 'wp-startup-press-room' ),
+			'new_item_name'              => __( 'New PR Category Name', 'wp-startup-press-room' ),
+			'parent_item'                => __( 'Parent PR Category', 'wp-startup-press-room' ),
+			'parent_item_colon'          => __( 'Parent PR Category:', 'wp-startup-press-room' ),
+			'all_items'                  => __( 'All PR Categories', 'wp-startup-press-room' ),
+			'search_items'               => __( 'Search PR Categories', 'wp-startup-press-room' ),
+			'popular_items'              => __( 'Popular PR Categories', 'wp-startup-press-room' ),
+			'separate_items_with_commas' => __( 'Separate PR categories with commas', 'wp-startup-press-room' ),
+			'add_or_remove_items'        => __( 'Add or remove PR categories', 'wp-startup-press-room' ),
+			'choose_from_most_used'      => __( 'Choose from the most used PR categories', 'wp-startup-press-room' ),
+			'not_found'                  => __( 'No PR categories found.', 'wp-startup-press-room' ),
 		);
 		$args = array(
 			'labels'            => $labels,
