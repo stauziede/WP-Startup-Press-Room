@@ -9,7 +9,7 @@ class PR_Meta_Box {
     private $fields = array(
 		array(
 			'id' => 'pr-date',
-            'label' => _e('PR Date', 'wp-startup-press-room'),
+            'label' => 'PR Date', 'wp-startup-press-room',
 			'type' => 'date',
 		),
 		array(
