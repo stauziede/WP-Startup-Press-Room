@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-08-09 13:54+0200\n"
-"PO-Revision-Date: 2016-08-09 13:55+0200\n"
+"POT-Creation-Date: 2016-08-09 14:25+0200\n"
+"PO-Revision-Date: 2016-08-09 14:27+0200\n"
 "Last-Translator: \n"
 "Language-Team: stauziede@gmail.com\n"
 "Language: fr_FR\n"
@@ -16,17 +16,41 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/class-dashboard-glancer.php:50
-msgid "Trying to add At a Glance items to dashboard widget afterhook already fired"
-msgstr ""
-
 #: includes/class-post-type-admin.php:40
 msgid "Image"
-msgstr ""
+msgstr "Image"
+
+#: includes/class-post-type-metaboxes.php:12
+msgid "PR Date"
+msgstr "Date du CP"
+
+#: includes/class-post-type-metaboxes.php:17
+msgid "Add Image(s) to Press Release"
+msgstr "Ajouter Image(s) au Communiqué"
+
+#: includes/class-post-type-metaboxes.php:25
+msgid "FOR IMMEDIATE RELEASE"
+msgstr "POUR DIFFUSION IMMEDIATE"
+
+#: includes/class-post-type-metaboxes.php:26
+msgid "EMBARGO UNTIL "
+msgstr "EMBARGO JUSQU'AU"
+
+#: includes/class-post-type-metaboxes.php:31
+msgid "if EMBARGO : until date"
+msgstr "si EMBARGO : date de fin"
+
+#: includes/class-post-type-metaboxes.php:36
+msgid "Location (City, State and/or Country)"
+msgstr "Localisation (Ville, Etat et/ou Pays)"
+
+#: includes/class-post-type-metaboxes.php:41
+msgid "Additional URL"
+msgstr "URL additionelle"
 
 #: includes/class-post-type-metaboxes.php:63
 msgid "Press Release options"
-msgstr ""
+msgstr "Options du Communiqué de Presse"
 
 #: includes/class-post-type-registrations.php:42
 msgid "Press Releases"

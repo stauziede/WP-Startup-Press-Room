@@ -9,12 +9,12 @@ class PR_Meta_Box {
 	private $fields = array(
 		array(
 			'id' => 'pr-date',
-			'label' => 'PR Date',
+			'label' => __('PR Date'),
 			'type' => 'date',
 		),
 		array(
 			'id' => 'add-image-s-to-press-release',
-			'label' => 'Add Image(s) to Press Release',
+			'label' => __('Add Image(s) to Press Release'),
 			'type' => 'media',
 		),
 		array(
@@ -22,23 +22,23 @@ class PR_Meta_Box {
 			'label' => 'Release Date',
 			'type' => 'select',
 			'options' => array(
-				'FOR IMMEDIATE RELEASE',
-				'EMBARGO UNTIL ',
+				__('FOR IMMEDIATE RELEASE'),
+				__('EMBARGO UNTIL '),
 			),
 		),
 		array(
 			'id' => 'if-embargo-until-date',
-			'label' => 'if EMBARGO : until date',
+			'label' => __('if EMBARGO : until date'),
 			'type' => 'datetime-local',
 		),
 		array(
 			'id' => 'location-city-state-and-or-country',
-			'label' => 'Location (City, State and/or Country)',
+			'label' => __('Location (City, State and/or Country)'),
 			'type' => 'text',
 		),
 		array(
 			'id' => 'additional-url',
-			'label' => 'Additional URL',
+			'label' => __('Additional URL'),
 			'type' => 'url',
 		),
 	);
