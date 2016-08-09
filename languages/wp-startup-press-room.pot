@@ -1,0 +1,130 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-08-09 12:33+0200\n"
+"PO-Revision-Date: 2016-08-09 13:42+0200\n"
+"Last-Translator: \n"
+"Language-Team: stauziede@gmail.com\n"
+"Language: en_EN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-dashboard-glancer.php:50
+msgid "Trying to add At a Glance items to dashboard widget afterhook already fired"
+msgstr ""
+
+#: includes/class-post-type-admin.php:40
+msgid "Image"
+msgstr ""
+
+#: includes/class-post-type-metaboxes.php:63
+msgid "Press Release options"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:42
+msgid "Press Releases"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:43
+msgid "Press Release"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:44
+msgid "Add new PR"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:45
+msgid "Add new Press Release"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:46
+msgid "Edit Press Release"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:47
+msgid "New Press Release"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:48
+msgid "View Press Release"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:49
+msgid "Search Press Release"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:50
+msgid "No Press Release found"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:51
+msgid "No Press Release in the trash"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:79
+#: includes/class-post-type-registrations.php:81
+msgid "PR Categories"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:80
+msgid "PR Category"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:82
+msgid "Edit PR Category"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:83
+msgid "Update PR Category"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:84
+msgid "Add New PR Category"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:85
+msgid "New PR Category Name"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:86
+msgid "Parent PR Category"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:87
+msgid "Parent PR Category:"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:88
+msgid "All PR Categories"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:89
+msgid "Search PR Categories"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:90
+msgid "Popular PR Categories"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:91
+msgid "Separate PR categories with commas"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:92
+msgid "Add or remove PR categories"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:93
+msgid "Choose from the most used PR categories"
+msgstr ""
+
+#: includes/class-post-type-registrations.php:94
+msgid "No PR categories found."
+msgstr ""
