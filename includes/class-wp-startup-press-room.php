@@ -113,6 +113,11 @@ class Wp_Startup_Press_Room {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wp-startup-press-room-admin.php';
         
+        /**
+		 * The class responsible for PR options page in the admin area.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wp-startup-press-room-options.php';
+        
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
