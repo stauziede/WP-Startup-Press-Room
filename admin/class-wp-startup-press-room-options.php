@@ -43,7 +43,7 @@ class PressRoomOptions
             <form method="post" action="options.php">
             <?php
                 // This prints out all hidden setting fields
-                settings_fields( 'my_option_group' );
+                settings_fields( 'pr_option_group' );
                 do_settings_sections( 'pr-setting-admin' );
                 submit_button();
             ?>
@@ -58,14 +58,14 @@ class PressRoomOptions
     public function page_init()
     {        
         register_setting(
-            'my_option_group', // Option group
+            'pr_option_group', // Option group
             'press_room_option', // Option name
             array( $this, 'sanitize' ) // Sanitize
         );
 
         add_settings_section(
             'setting_section_id', // ID
-            'My Custom Settings', // Title
+            'Customize Press Room', // Title
             array( $this, 'print_section_info' ), // Callback
             'pr-setting-admin' // Page
         );  
@@ -84,7 +84,15 @@ class PressRoomOptions
             array( $this, 'title_callback' ), 
             'pr-setting-admin', 
             'setting_section_id'
-        );      
+        );   
+        
+        add_settings_field(
+            'urlpresskit', 
+            'Url Press Kit', 
+            array( $this, 'urlpresskit_callback' ), 
+            'pr-setting-admin', 
+            'setting_section_id'
+        );
     }
 
     /**
@@ -100,6 +108,9 @@ class PressRoomOptions
 
         if( isset( $input['title'] ) )
             $new_input['title'] = sanitize_text_field( $input['title'] );
+        
+        if( isset( $input['urlpresskit'] ) )
+            $new_input['urlpresskit'] = sanitize_text_field( $input['urlpresskit'] );
 
         return $new_input;
     }
@@ -131,6 +142,14 @@ class PressRoomOptions
         printf(
             '<input type="text" id="title" name="press_room_option[title]" value="%s" />',
             isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
+        );
+    }
+    
+    public function urlpresskit_callback()
+    {
+        printf(
+            '<input type="text" id="urlpresskit" name="press_room_option[urlpresskit]" value="%s" />',
+            isset( $this->options['urlpresskit'] ) ? esc_attr( $this->options['urlpresskit']) : ''
         );
     }
 }
